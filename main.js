@@ -15,7 +15,7 @@ submit.addEventListener('click' , function() {
   }
   if (enterTask.value){
     let getTask = enterTask.value;
-    console.log(getTask)
+    enterTask.value = '';
     window.localStorage.tasks += `
     <div class="item">
     <div class="itemTask">${getTask}</div>
